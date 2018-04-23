@@ -38,8 +38,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "fractions",
-            "js": "fractions"
+            "python": "add_fractions",
+            "js": "addFractions"
         },
         cover_code={
             #'python-3': cover_codes.unwrap_args,

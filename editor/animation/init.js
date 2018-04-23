@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'fractions',
-                js: 'fractions'
+                python: 'add_fractions',
+                js: 'addFractions'
             }
         });
         io.start();

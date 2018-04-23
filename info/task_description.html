@@ -27,14 +27,14 @@ If the result hasn't the fraction part and has only integer - you should return 
 <strong>Example:</strong>
 </p>
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">fractions(((2, 3), (2, 3))) == "1 and 1/3"
-fractions(((1, 3), (1, 3))) == "2/3"
-fractions(((1, 3), (1, 3), (1, 3))) == 1
+<pre class="brush: javascript">addFractions(((2, 3), (2, 3))) == "1 and 1/3"
+addFractions(((1, 3), (1, 3))) == "2/3"
+addFractions(((1, 3), (1, 3), (1, 3))) == 1
 </pre>
 {% else %}
-<pre class="brush: python">fractions(((2, 3), (2, 3))) == "1 and 1/3"
-fractions(((1, 3), (1, 3))) == "2/3"
-fractions(((1, 3), (1, 3), (1, 3))) == 1
+<pre class="brush: python">add_fractions(((2, 3), (2, 3))) == "1 and 1/3"
+add_fractions(((1, 3), (1, 3))) == "2/3"
+add_fractions(((1, 3), (1, 3), (1, 3))) == 1
 </pre>
 {% endif %}
 </div>
