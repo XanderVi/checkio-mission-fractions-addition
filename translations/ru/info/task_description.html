@@ -1,0 +1,55 @@
+<!-- Describe task in general -->
+
+<p>
+Ваша задача - написать функцию, которая в качестве аргументов принимает кортеж кортежей, который содержит дроби и возвращает их сумму. Дроби будут в формате (x, y) где 'x' числитель, а 'y' - знаменатель. Например, (2, 3) означает 2/3.
+Если после сложения всех дробей числитель превышает знаменатель - вам нужно выделить целую часть и записать её перед дробной. Например:<br>
+fractions(((2, 3), (2, 3))) = "1 and 1/3", так как в результате сложения получается 4/3 (числитель больше знаменателя) и вы можете выделить целую часть (1) и дробную (1/3). Обратите внимание, что что слово 'and' - обязательное, если в ответе присутствую обе части - целая и дробная.<br>
+Если в результате получается число без дробной части, вам нужно вернуть его как целое число ('int'-type), а не строку ('str'-type).
+Если наборот, в результате получается дробь без целой части, вам нужно вернуть её в формате строки вида 'A/B', где A - числитель, В - знаменатель.
+</p>
+
+<p style="text-align: center;">
+    <img  title="Fractions addition" src="{{MEDIA}}fractions.png" alt="example" style="max-height: 80px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Дроби.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Сумма дробей. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Пример:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">fractions(((2, 3), (2, 3))) == "1 and 1/3"
+fractions(((1, 3), (1, 3))) == "2/3"
+fractions(((1, 3), (1, 3), (1, 3))) == 1
+</pre>
+{% else %}
+<pre class="brush: python">fractions(((2, 3), (2, 3))) == "1 and 1/3"
+fractions(((1, 3), (1, 3))) == "2/3"
+fractions(((1, 3), (1, 3), (1, 3))) == 1
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Для работы с нецелыми числами.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Предусловия</strong>:<br>
+    2 <= количество дробей <= 10<br>
+    В этой задаче будут использоваться только положительные дроби.
+</p>
