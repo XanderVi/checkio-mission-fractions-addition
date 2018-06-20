@@ -27,9 +27,9 @@ If the result doesn’t contain the fraction part and has only the integer - you
 <strong>Example:</strong>
 </p>
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">addFractions(((2, 3), (2, 3))) == "1 and 1/3"
-addFractions(((1, 3), (1, 3))) == "2/3"
-addFractions(((1, 3), (1, 3), (1, 3))) == 1
+<pre class="brush: javascript">addFractions([[2, 3], [2, 3]]) == "1 and 1/3"
+addFractions([[1, 3], [1, 3]]) == "2/3"
+addFractions([[1, 3], [1, 3], [1, 3]]) == 1
 </pre>
 {% else %}
 <pre class="brush: python">add_fractions(((2, 3), (2, 3))) == "1 and 1/3"
